@@ -1,0 +1,39 @@
+a
+{
+	color: #F16028;
+}
+body
+{
+	background: #EEEEEE;
+	font-family: Arial;
+	font-size: 16px;
+}
+header
+{
+	background: #474747;
+	color: white;
+	overflow: hidden;
+	padding: 0.5em;
+}
+header figure
+{
+	float: left;
+}
+header h1
+{
+	border: 1px solid white;
+	font-size: 1.3em;
+	margin: 0 70px 0 0;
+}
+header #avatar img
+{
+	border-radius: 50%;
+	width: 40px;
+}
+header #logo img
+{
+	border-right: 1px solid white;
+	margin-right: 0.5em;
+	padding: 0.5em;
+	width: 60px;
+}
