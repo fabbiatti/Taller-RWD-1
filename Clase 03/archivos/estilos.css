@@ -8,3 +8,29 @@ body
 	font-family: Arial;
 	font-size: 16px;
 }
+header
+{
+	background: #474747;
+	color: white;
+}
+header h1 
+/* Colocamos el h1 así porque es el único
+h1 que está dentro del header */{
+	font-size: 20px;
+/* Si quisiéramos sacarle el bold al h1 usamos
+el peso normal 
+	font-weight: normal;
+*/
+
+}
+header #avatar img
+{
+	border-radius: 50%;
+	width: 40px;
+}
+header #logo img
+{
+	width: 60px;
+	/* Recordemos que logo.png original tiene
+	160px x 160px */
+}
