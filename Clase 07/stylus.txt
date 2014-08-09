@@ -1,0 +1,3 @@
+d:
+
+d:carpeta\carpeta>stylus archivo.styl -c -w

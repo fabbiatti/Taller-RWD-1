@@ -1,0 +1,313 @@
+/*
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fuentes/Roboto-Regular-webfont.eot');
+    src: url('fuentes/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fuentes/Roboto-Regular-webfont.woff') format('woff'),
+         url('fuentes/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('fuentes/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*/
+@font-face {
+	font-family: 'icomoon';
+	src:url('fuentes/icomoon.eot?hv2qcl');
+	src:url('fuentes/icomoon.eot?#iefixhv2qcl') format('embedded-opentype'),
+		url('fuentes/icomoon.woff?hv2qcl') format('woff'),
+		url('fuentes/icomoon.ttf?hv2qcl') format('truetype'),
+		url('fuentes/icomoon.svg?hv2qcl#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star:before {
+	color: yellow;
+	content: "\e600";
+}
+.icon-plus:after {
+	content: "\e601";
+	margin-left: 1em;
+}
+.icon-arrow-down:before {
+	color: red;
+	content: "\e602";
+
+}
+.icon-arrow-up:before {
+	color: green;
+	content: "\e603";
+}
+
+a
+{
+	color: #F16028;
+	text-decoration: none;
+}
+aside {
+	display: none;
+}
+body
+{
+	background: #EEEEEE;
+	font-family: "Roboto";
+	font-size: 16px;
+}
+footer
+{
+	background: #474747;
+	color: #FBBF16;
+	padding: 1em;
+	text-align: center;
+}
+footer p:first-child
+{
+	margin-bottom: 0;
+}
+footer p:last-child
+{
+	margin-top: 0;
+}
+footer p:last-child:after
+{
+	content: " -";
+}
+footer p:last-child:before
+{
+	content: "- ";
+}
+header
+{
+	background: #474747;
+	color: white;
+	overflow: hidden;
+	padding: 0.25em;
+	position: relative;
+}
+header figure
+{
+	float: left;
+}
+header h1 
+{
+	font-size: 1.3em;
+	margin: 1em 70px 0 0;
+}
+header #avatar
+{
+	margin: 0.5em 0.5em 0 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+header #avatar img
+{
+	border-radius: 50%;
+	width: 40px;
+}
+header #logo
+{
+	border-right: 1px solid white;
+	margin-right: 0.5em;
+	
+}
+header #logo img
+{
+	margin-right: 0.5em;
+	padding-right: 0.5em;
+	-webkit-transition: .5s;
+	width: 60px;
+}
+header #logo img:hover
+{
+	-webkit-transform: rotate(360deg);
+}
+nav
+{
+	background: #FBBF16;
+	padding: 0 6.5em 0 0.5em;
+	position: relative;
+}
+nav ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul li
+{
+	display: inline-block;
+	margin: 0 1em 0 0;
+}
+nav ul li a
+{
+	color: #474747;
+	display: block;
+	padding: 0.5em;
+	text-decoration: none;
+	-webkit-transition: .3s;
+}
+nav ul li a:hover
+{
+	background: white;
+}
+nav ul #nuevo_nav
+{
+	position: absolute;
+	right: 0;
+	top: -0.4em;
+}
+nav ul #nuevo_nav a
+{
+	background: #F16028;
+	border-radius: 0.25em;
+	box-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+	color: white;
+	padding: 0.8em 2.5em 0.8em 0.5em;
+	text-decoration: none;
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+}
+nav ul #nuevo_nav a:after
+{
+	position: absolute;
+	right: .5em;
+	top: .9em;
+}
+nav ul #nuevo_nav a:hover:after
+{
+	font-size: 1.2em;
+}
+nav ul #nuevo_nav a span
+{
+	font-family: Roboto;
+	font-size: 1.2em;
+}
+
+nav ul #publicar_nav a:after{
+	position: absolute;
+	left:.5em;
+	top:.7em;
+}
+nav ul #publicar_nav a:hover:after{
+	font-size: 20px;
+	
+}
+
+
+#contenido /* Colocamos margen */
+{
+	margin: 0.5em;
+}
+#contenido .item /* Declaramos la clase .item */
+{
+	background: white;
+	border-bottom: 3px solid #FBBF16;
+	margin-bottom: 3em; /* Separación del footer */
+	min-height: 144px; /* Altura mínima de la foto */
+	position: relative;
+}
+#contenido .item .autor_item
+{
+	color: #AAA;
+}
+#contenido .item .imagen_item /* La tiramos a la izquierda para que la abrace el contenido */
+{
+	float: left;
+	margin: 0 1em 0 0; /* Para que no esté tan cerca de elementos */
+}
+#contenido .item .imagen_item img
+{
+	width: 96px;
+}
+#contenido .item .info_item
+{
+	margin: 1em 1em 0 0;
+	text-align: right;
+}
+#contenido .item .info_item .fecha_item
+{
+	color: #AAA;
+}
+#contenido .item .info_item .tag_item
+{
+	background: #15AEBE;
+	border-radius: 0.5em;
+	color: white;
+	display: inline-block;
+	float: left;
+	font-weight: bold;
+	padding: 0.2em 0.5em;
+	text-decoration: none;
+}
+#contenido .item .titulo_item
+{
+	font-size: 1.2em; /* Forzamos el font-size 16px por defecto */
+	padding: 1em 1em 0 0;
+}
+#contenido .item .titulo_item a
+{
+	color: #474747;
+	text-decoration: none;
+}
+#contenido .item .votacion /* Es el más complicado de los que hicimos, lo tenemos que hacer flotar */
+{
+	background: white;
+	border: 1px solid white;
+	margin-top: 4px; /* Separación de la foto con votación */
+	padding: 0.2em 0;
+	position: absolute;
+	text-decoration: none;
+	top:100%;	/* Con absolute pierde muchas características */
+	width: 100%; /* Ancho de la caja de votación */
+}
+#contenido .item .votacion a
+{
+	text-decoration: none;
+}
+#contenido .item .votacion .comentario_item, /* cuando separo con comas, tienen el mismo valor */
+#contenido .item .votacion .favorito_item
+{
+	float: right;
+	margin: 0 10px 0 0;
+}
+
+
+@media screen and (min-width:800px){
+
+	#contenido
+	{
+		overflow: hidden;
+	}
+	#contenido .item 
+	{
+		float: left;
+		width: 49%;
+	}
+	#contenido .item:nth-child(odd) 
+	{
+		background: red;
+		margin-right: 2%;
+	}
+
+}
+@media screen and (min-width:1000px){
+	aside{
+		display: block;
+		float: right;
+		margin: .5em;
+	}
