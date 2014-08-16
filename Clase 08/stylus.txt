@@ -1,0 +1,2 @@
+TIpear este comando en a terminal para poder compilar automáticamente
+stylus archivo.styl -c -w

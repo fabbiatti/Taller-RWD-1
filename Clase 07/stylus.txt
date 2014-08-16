@@ -1,3 +1,2 @@
-d:
-
-d:carpeta\carpeta>stylus archivo.styl -c -w
+TIpear este comando en a terminal para poder compilar uatomáticamente
+stylus archivo.styl -c -w
